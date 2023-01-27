@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768 até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 12200px
+*/
+
+@media screen and (min-width: 550px) {
+    span#burguer {
+        display: none;
+    }
+
+    nav {
+        display: flex;        
+    }
+
+    header {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    header {  
+        padding-top: 30px;
+        width: 98vw; 
+    }
+
+    #img-logo {        
+        width: 200px;
+        height: auto; 
+    }
+
+    .menu {  
+        display: flex;  
+        padding: 15px 25px;
+        font-size: 1.4em;
+        margin: 5px;
+    }
+
+    nav > li > a:hover {
+        padding: 15px 25px;
+    }
+    
+    #sobre {
+        display: flex;
+        padding: 60px 30px;
+    }
+
+    picture {
+        padding: 0px 80px;
+    }
+
+    #foto-perfil {         
+        width: 350px;  
+    }
+    
+    #texto-sobre {        
+        margin: auto;
+        text-align: justify;
+        padding: 0px 40px; 
+        font-size: 1.3em;       
+    }    
+
+    iframe { 
+        height: 550px;
+        width: 80vw;
+    }
+
+    main, header, footer {
+        width: 98vw;
+    }
+
+}

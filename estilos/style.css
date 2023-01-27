@@ -19,12 +19,14 @@ Grandes telas: acima de 12200px
 html, body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-
+    margin: auto;
 }
 
-header {
-    display: flex;    
+
+header {  
+    padding-top: 20px;  
     height: auto;
+    width: 90vw; 
     margin: auto;
     align-items: center;
     text-align: center;
@@ -38,17 +40,34 @@ header {
     width: 150px;
     height: auto; 
     padding-top: 20px;
-
 }
 
-header nav {
-    display: flex;     
+span#burguer {
+    background-color: rgb(53, 53, 53);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+header nav {     
     padding-top: 10px; 
     margin: auto;
     box-sizing: border-box;
 }
 
-.menu {
+nav {
+    display: none;
+}
+
+.menu {  
+    display: block;  
     padding: 10px;
     color: white; 
     border-radius: 8px; 
@@ -63,7 +82,7 @@ nav > li > a:hover {
 }
 
 main {
-    
+    width: 90vw; 
     margin: auto;    
 }
 
@@ -119,13 +138,12 @@ picture {
 #redes-sociais > li > a {
     color: black;
     margin: auto;
-    padding: 5px; 
+    padding: 10px; 
 }
 
 
-#redes-sociais img {
-    margin: 15px; 
-    width: 70px;  
+#redes-sociais img {   
+    width: 65px;  
     height: auto;
     border-radius: 50%;
     box-shadow: 2px 2px 6px #08080854;
@@ -154,13 +172,16 @@ picture {
 iframe { 
     margin: auto;
     display: flex;
-    width: 95vw;
+    width: 90vw;
+    height: 400px; 
     padding: 20px 0px;
 }
 
 footer {
     background-color: #b99851;
     padding: 5px;
+    width: 90vw; 
+    margin: auto;
 }
 
 footer > p {
